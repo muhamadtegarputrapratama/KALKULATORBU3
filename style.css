@@ -1,0 +1,94 @@
+body {
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+    margin: 0;
+    height: 100vh;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.star {
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    animation: fall linear infinite;
+}
+@keyframes fall {
+    0% {
+       transform: translateY(-100vh);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
+}
+.calculator {
+     position: relative;
+     z-index: 1;
+     background: #8B4513; 
+     padding: 20px;
+     border-radius: 10px;
+     box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+     animation: bounceIn 0.5s;
+     max-width: 270px;
+     text-align: center;
+     border: 5px solid #654321;
+     height: 400px; 
+     margin: 20px 0;
+}
+.shelf {
+    background: #D2B48C;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+ input {
+     margin: 10px 0;
+     padding: 10px;
+     width: 90%;
+     border: 2px solid #6a11cb;
+     border-radius: 5px;
+     transition: border-color 0.3s;
+ }
+ input:focus {
+     border-color: #2575fc;
+     outline: none;
+ }
+ button {
+     padding: 10px;
+     background-color: #c85f;
+     color: white;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     transition: background-color 0.3s, transform 0.2s;
+     width: 95%;
+ }
+ button:hover {
+     background-color: #c77e12;
+     transform: scale(1.05);
+ }
+ @keyframes bounceIn {
+     0% { transform: scale(0); }
+     50% { transform: scale(1.1); }
+     100% { transform: scale(1); }
+ }
+ .result {
+     margin-top: 8px;
+     font-weight: bold;
+     font-size: 1.2em;
+     color: #333;
+ }
+ .container {
+     display: flex;
+     flex-wrap: wrap; 
+     justify-content: space-around;
+     width: 100%;
+ }
+
+ @media (max-width: 600px) {
+     .calculator {
+         width: 100%;
+         margin: 10px 0; 
+     }
+ }

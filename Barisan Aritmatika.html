@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <script src="script.js"></script>
+   <title>Kalkulator Tegar</title>
+</head> 
+<body>
+    <div class="container">
+        <div class="calculator">
+            <h2>Kalkulator Barisan Aritmatika</h2>
+            <div class="shelf">
+                <input type="number" id="firstTerm" placeholder="Masukin suku pertama" required>
+            </div>
+            <div class="shelf">
+                <input type="number" id="commonDifference" placeholder="Masukin beda" required>
+            </div>
+            <div class="shelf">
+                <input type="number" id="numberOfTerms" placeholder="Masukin jumlah suku" required>
+            </div>
+            <button id="calculate">Hitung</button>
+            <div class="result" id="result"></div>
+        </div>
+
+        <div class="calculator">
+            <h2>Kalkulator Barisan Geometri</h2>
+            <div class="shelf">
+                <input type="number" id="firstTermGeo" placeholder="Masukin suku pertama" required>
+            </div>
+            <div class="shelf">
+                <input type="number" id="commonRatio" placeholder="Masukin rasio" required>
+            </div>
+            <div class="shelf">
+                <input type="number" id="numberOfTermsGeo" placeholder="Masukin jumlah suku" required>
+            </div>
+            <button id="calculateGeo">Hitung</button>
+            <div class="result" id="resultGeo"></div>
+        </div>
+
+        <div class="calculator">
+            <h2>Kalkulator Barisan Geometri Tak Hingga</h2>
+            <div class="shelf">
+                <input type="number" id="firstTermInfGeo" placeholder="Masukin suku pertama" required>
+            </div>
+            <div class="shelf">
+                <input type="number" id="commonRatioInfGeo" placeholder="Masukin rasio" required>
+            </div>
+            <button id="calculateInfGeo">Hitung</button>
+            <div class="result" id="resultInfGeo"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
